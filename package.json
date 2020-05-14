@@ -1,0 +1,26 @@
+{
+  "name": "Weather-Journal-App",
+  "version": "1.0.0",
+  "description": "This project required an asynchronous web app that uses Web API and user data to dynamically update the UI in a Weather Journal application.\r   - dynamically updating the home page UI.\r   - Node server for giving data to the web page. \r   - Weather API for getting the data through fetch() and posting it to node server.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gowthamaraj/Weather-Journal-App.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gowthamaraj/Weather-Journal-App/issues"
+  },
+  "homepage": "https://github.com/gowthamaraj/Weather-Journal-App#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}

@@ -1,6 +1,6 @@
 /* Global Variables */
 // http://api.openweathermap.org/data/2.5/weather?zip=94712,us&appid=49b9b809e566d9d0cb35f31930cdff2e
-const key = '49b9b809e566d9d0cb35f31930cdff2e';
+const key = '&appid=49b9b809e566d9d0cb35f31930cdff2e&units=imperial';
 const baseUrl = 'http://api.openweathermap.org/data/2.5/weather?zip='
 
 const generate = document.querySelector('#generate');
@@ -14,7 +14,7 @@ let d = new Date();
 let newDate = d.getMonth()+'.'+ d.getDate()+'.'+ d.getFullYear();
 
 const getData = async (baseUrl,zipcode ='642126,in',key)=>{
-    const url = `${baseUrl}${zipcode}&appid=${key}`;
+    const url = `${baseUrl}${zipcode}${key}`;
     const response = await fetch(url);
     const responseData = await response.json();
     return responseData;
@@ -40,7 +40,7 @@ const updateUI = async () =>{
     const responseData = await response.json();
     date.innerHTML = `<span class="entry-item">Date: </span>${responseData.date}`;
     content.innerHTML = `<span class="entry-item">You feel: </span>${responseData.user_response}`
-    tempr.innerHTML = `<span class="entry-item">Temperature: </span>${responseData.temperature}`;
+    temp.innerHTML = `<span class="entry-item">Temperature: </span>${responseData.temperature}&deg;F`;
     return responseData;
 }
 const clickHandler = async (e)=>{
