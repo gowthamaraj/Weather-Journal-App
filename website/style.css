@@ -1,0 +1,82 @@
+/* resetting the elements */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 10px;
+    background-color: #1F2932;
+}
+#app{
+    max-width: 60rem;
+    /* min-height: 90vh; */
+    margin:2rem auto;
+    border-radius: .5rem;
+    background-color: #6D7780;
+    padding-bottom: 2rem;
+}
+
+header{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-top: 1rem;
+    color:#FFAE0C;
+}
+header h1{
+    font-size: 5rem;
+}
+
+.zip{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 2rem;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+.zip label{
+    padding-right: 2rem;
+}
+.zip input{
+    border-radius: .2rem;
+}
+
+.feel{
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+.feel label{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.feel textarea{
+    max-width: 90%;
+    margin:auto;
+    margin-bottom: 1rem;
+    border-radius: .2rem;
+}
+.feel button{
+    width: fit-content;
+    margin:auto;
+    border-radius: .2rem;
+}
+
+.entry{
+    background-color: #A4E4F5;
+    text-align: center;
+    height: fit-content;
+    padding: 2rem;
+    margin: .5rem;
+    border-radius: .5rem;
+    font-size: 1.7rem;
+}
+h4{
+    color: #0F2B3D;
+}
