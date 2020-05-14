@@ -12,8 +12,8 @@ This project uses the following technologies to implement the required functiona
 
 ## Project structure
    - website
-     style.css    
-     index.html
-     app.js
+     - style.css    
+     - index.html
+     - app.js
    - server.js
    - README.md
